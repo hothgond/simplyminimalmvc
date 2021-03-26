@@ -1,0 +1,12 @@
+.container-cookies {
+  padding: 33px 60px;
+  background-color: $color-light;
+  width: calc(100% - 120px);
+  min-height: 60px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

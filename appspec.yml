@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/drupal/elections
+hooks:
+  BeforeInstall:
+    - location: cicd/BeforeInstall.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: cicd/AfterInstall.sh
+      timeout: 300
+      runas: root

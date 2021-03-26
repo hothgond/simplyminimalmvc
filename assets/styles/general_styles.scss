@@ -1,0 +1,21 @@
+.dnone {
+  display: none !important;
+}
+.selectable {
+  color: $color-dark-blue;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: $color-light-blue-hover;
+    font-weight: bolder;
+  }
+}
+label.error {
+  color: $color-red;
+  font-weight: bold;
+}
+input.error,
+textarea.error {
+  background-color: $color-red-transparent;
+  border: 2px solid $color-red;
+}

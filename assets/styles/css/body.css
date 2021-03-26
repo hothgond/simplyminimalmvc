@@ -1,0 +1,15 @@
+.generalbody__header {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+.generalbody__content {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .generalbody__content_container {
+    display: flex; }
+  .generalbody__content_section-table {
+    width: 200px;
+    margin-right: 20px; }
+  .generalbody__content_section-general {
+    width: calc(100% - 220px); }

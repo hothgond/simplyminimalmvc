@@ -1,0 +1,98 @@
+{
+  "head": "SimplyMinimalMVC",
+  "img_alt": {
+    "footer-alt-img-site": "Ver nuestro site",
+    "footer-alt-img-linkedin": "Ver nuestro LinkedIn",
+    "footer-alt-img-medium": "Ver nuestro Medium",
+    "footer-alt-img-twitter": "Ver nuestro Twitter",
+    "footer-alt-img-youtube": "Ver nuestro canal de Youtube",
+    "footer-alt-img-logo": "logo",
+
+    "loader-alt-loader": "Cargando"
+  },
+  "a_title": {},
+  "text": {
+    "header-supertitle": "SimplyMinimalMVC",
+    "header-title": "El MVC que podrías necesitar",
+    "section-generalBodyContentSectionHome": "Home",
+    "section-generalBodyContentSectionContactUs": "Contáctanos",
+
+    "footer-title": "Título del Footer",
+    "footer-explanation": "Contenido del Footer",
+    "footer-more": "Más sobre SM-MVC",
+    "footer-disclaimer": "Disclaimer",
+    "footer-contact": "Contacto",
+    "footer-privacy": "Política de Provacidad",
+    "footer-sources-1": "Modal1",
+    "footer-sources-2": "Modal2",
+    "footer-copyright": "SimplyMinimalMVC © 2021",
+
+    "cookies-title": "Política de Cookies",
+    "cookies-text": "Usamos cookies para mejorar tu experiencia de usuario. Haciendo click en 'Aceptar' significa que estás de acuerdo en esto.",
+    "cookies-agree": "Sí. Aceptar",
+    "cookies-more": "Acerca de Cookies",
+
+    "modal-1-title": "Título de la Modal 1",
+    "modal-1-content": "Contenido de la Modal 1",
+    "modal-2-title": "Título de la Modal 2",
+    "modal-2-content": "Contenido de la Modal 2",
+
+    "loader_loading": "Esperando...",
+
+    "contactUs-label-name": "Nombre:",
+    "contactUs-label-age": "Edad:",
+    "contactUs-min-age": "(mínimo 18)",
+    "contactUs-label-weight": "Peso:",
+    "contactUs-spec-weight": "(requerido para mayores de 50)",
+    "contactUs-label-email": "Correo electrónico:",
+    "contactUs-label-text": "Texto:",
+    "contactUs-send": "Enviar",
+
+    "validator-required": "Este campo es requerido",
+    "validator-remote": "Este campo es incorrecto",
+    "validator-email": "El Email tiene un formato inválido",
+    "validator-url": "La URL no es válida",
+    "validator-date": "La fecha marcada es inválida",
+    "validator-dateISO": "La fecha marcada es inválida (ISO)",
+    "validator-number": "El campo debe ser Numérico",
+    "validator-digits": "Este campo sólo acepta Dígitos",
+    "validator-creditcard": "El número de tarjeta de crédito es inválido",
+    "validator-equalTo": "El contenido de este campo difiere del anterior",
+    "validator-accept": "La extensión es inválida",
+    "validator-maxlength-part": "Este campo acepta un máximo de ",
+    "validator-minlength-part": "Requiere un mínimo de ",
+    "validator-rangelength-part": "Introduzca un valor entre ",
+    "validator-range-part": "Introduzca un valor entre ",
+    "validator-max-part": "Introduzca un valor menor o igual a ",
+    "validator-min-part": "Introduzca un valor mayor o igual a ",
+    "validator-characters-part": " charácteres",
+    "validator-characters-long-part": " charácteres de largo",
+
+    "and": "y",
+
+    "home-intro-header": "¿Qué es SimplyMinimalMVC?",
+    "home-intro-based": "SimplyMinimalMVC es un MVC simple basado en:",
+    "home-intro-offer": "Qué ofrece SimplyMinimalMVC:",
+    "home-offer-pt1": "Código directamente listo para programar.",
+    "home-offer-pt2": "Aplicación de HTML visible en una sola página, pero distribuida en multi-archivos para una mejor y más ordenada programación.",
+    "home-offer-pt3": "Sistema de Traducciones fácil e integrado.",
+    "home-offer-pt4": "Soporte integrado para Analytics, que permite trackear secciones sin recargar la página.",
+    "home-offer-pt5": "Sistema de Validación de formularios basado en Jquery Validate Versión 1.9.2",
+    "home-offer-pt6-part1": "SASS/SCSS preparado con variables. (Necesita de SCSS/SASS instalado, y usaremos ",
+    "home-offer-pt6-part2": " para minimizar las exportaciones)",
+    "home-offer-pt7": "Modelos PHP con clases de conexión con base de datos integradas y seguras.",
+    "home-offer-pt8": "Sistema de validación de parámetros de entrada para back-end.",
+
+    "home-intro-offer-others": "Otras cosas interesantes de SimplyMinimalMVC:",
+    "home-offer-others-pt0": "Algunas funciones de CSS y jQuery para ahorrarte tiempo.",
+    "home-offer-others-pt1": "Ventanas modales fáciles de replicar y crear.",
+    "home-offer-others-pt2": "Nomenclatura BEM para CSS.",
+    "home-offer-others-pt3": "SimplyMinimalMVC usa el LocalStorage para preservar variables del site.",
+    "home-offer-others-pt4": "Sisteama de comunicación Front-end a Back-end asíncrono incorporado. (AJAX)",
+    "home-offer-others-pt5": "SimplyMinimalMVC es 100% libre y 100% sin publicidad.",
+
+    "section-loader-name": "Pantalla de carga",
+    "section-overlay1-name": "Overlay 1",
+    "section-overlay2-name": "Overlay 2"
+  }
+}

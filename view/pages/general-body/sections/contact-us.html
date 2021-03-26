@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <body>
+    <form id="contactUsForm">
+      <div class="formfield__text">
+        <label for="name" key="contactUs-label-name">Name:</label>
+        <input type="text" id="contactUsInputName" name="name" />
+      </div>
+      <div class="formfield__text">
+        <label for="contactUsAge" key="contactUs-label-age">Your Age:</label>
+        <span key="contactUs-min-age">(minimum 18)</span>
+        <input type="text" id="contactUsInputAge" name="age" required />
+      </div>
+      <div class="formfield__text">
+        <label for="contactUsWeight" key="contactUs-label-weight"
+          >Weight:</label
+        >
+        <span key="contactUs-spec-weight">(required if age over 50)</span>
+        <input type="text" id="contactUsInputWeight" name="weight" required />
+      </div>
+      <div class="formfield__email">
+        <label for="contactUsEmail" key="contactUs-label-email">Email:</label>
+        <input type="email" id="contactUsInputEmail" name="email" required />
+      </div>
+      <div class="formfield__textarea">
+        <label key="email-label-text">Text:</label>
+        <textarea
+          rows="4"
+          cols="20"
+          name="message"
+          id="contactUsInputMessage"
+          required
+        ></textarea>
+      </div>
+    </form>
+    <div
+      class="formfield__submit"
+      type="submit"
+      key="contactUs-send"
+      onclick="validateForm('contactUsForm')"
+    >
+      Send
+    </div>
+
+    <script>
+      includeHTML();
+      $(document).ready(function () {
+        $("#contactUsForm").validate();
+      });
+    </script>
+  </body>
+</html>

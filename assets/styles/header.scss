@@ -1,0 +1,65 @@
+.header {
+  &__container {
+    &-bar {
+      position: relative;
+      height: 50px;
+    }
+    &-languages {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &-text {
+      position: relative;
+    }
+    &-breadcrumbs {
+      position: absolute;
+      display: flex;
+      bottom: 6px;
+      left: 14px;
+    }
+  }
+  &__supertitle {
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+  &__title {
+    font-size: 80px;
+    line-height: 110px;
+    letter-spacing: 3px;
+  }
+  &__languages {
+    right: 15px;
+    top: 15px;
+    position: absolute;
+    z-index: 100;
+    width: max-content;
+    color: $color-black;
+  }
+}
+
+.breadcrumb {
+  padding-left: 12px;
+  &:first-of-type {
+    padding-left: 0;
+  }
+}
+
+.btn {
+  border: 2px solid $color-white;
+  border-radius: 8px;
+  background-color: $color-white-transparent;
+  padding: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-light-grey;
+  }
+  &.selected {
+    background-color: $color-white;
+  }
+}
