@@ -1,4 +1,8 @@
 function showBodySection(sectionId) {
+    // CLOSE NAVIGATION MODAL IF NEEDED
+    if (!$("#navigationModal").hasClass('dnone')) {
+        toggleModal('navigationModal');
+    }
     // ALTER BASIC BREADCRUMBS
     if($( ".header__container-breadcrumbs div" ).length > 1){
         $( ".header__container-breadcrumbs div" ).last().remove();
@@ -18,7 +22,11 @@ function showBodySection(sectionId) {
     }
 }
 
-function scrollToAnchor(sectionId){
+// Anchor needs tha ID of the Anchor and parentSectionId to show it if it is hidden!
+function scrollToAnchor(sectionId, parentSectionId){
+    // Show parent section if needed
+    showBodySection(parentSectionId);
+    // SCROLL TO
     var tag = $("#"+ sectionId +"");
     $('html,body').animate({scrollTop: tag.offset().top},'slow');
 }

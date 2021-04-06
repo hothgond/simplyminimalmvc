@@ -2,6 +2,7 @@
 // @koala-append "../lib/jquery.MultiLanguage.js"
 // @koala-append "../lib/jquery.validate-1.9.2.min.js"
 // @koala-append "../lib/validators.js"
+// @koala-append "../lib/includeHTML.js"
 
 // @koala-append "utility_functions.js"
 // @koala-append "modals.js"

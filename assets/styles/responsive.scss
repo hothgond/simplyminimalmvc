@@ -38,6 +38,12 @@
 }
 
 @media (max-width: 940px) {
+  #generalBodyContentSectionTable {
+    display: none;
+  }
+  .header__menu {
+    display: block;
+  }
 }
 
 @media (max-width: 818px) {

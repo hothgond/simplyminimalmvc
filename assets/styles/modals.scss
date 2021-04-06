@@ -7,12 +7,25 @@
   right: 0;
   bottom: 0;
   background-color: $color-black-transparent; /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  z-index: 100;
+  cursor: pointer;
+  &__close {
+    background-color: $color-white;
+    border-radius: 25px;
+    border: 2px solid $color-grey;
+    position: absolute;
+    right: calc(10% - 12px);
+    top: calc(10% - -8px);
+    padding: 7px;
+    max-height: 24px;
+  }
 }
 .overlay {
   width: auto;
   height: 70vh;
   margin: 10% 10% 0 10%;
   background-color: $color-white;
+}
+.card {
+  padding: 15px;
 }

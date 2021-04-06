@@ -8,7 +8,7 @@ function storageSet(item, val){
 function initLocalStorage() {
   var localStorageItems = {
     language : 'en',
-    
+
     //SECTIONS go here
     showCookies: true,
     showUsers: false,

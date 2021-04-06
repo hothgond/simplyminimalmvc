@@ -1,9 +1,23 @@
 function validateFormsOnInit(){
-  // ADD HERE ALL FORMS TO BE DINAMICALY VALIDATED
-  validateForm('contactUsForm');
+  // ADD HERE ALL FORMS TO BE DINAMICALY VALIDATED, Need to validate for seen form in order to not repeat validate X times.
+  if($("#contactUsForm").length == 1 && !$("#contactUsForm").hasClass('seen-form')){
+    validateForm('contactUsForm');
+  }
+}
+function treatForm(formId){
+  if(formId == "contactUsForm"){
+    $('#modalLoader').removeClass('dnone');
+    ajaxSendContactUsMail();
+    $('#modalLoader').addClass('dnone');  
+  } else {
+    console.log('Unhandled petition for Form "'+formId+'" specify it in form validators');
+  }
 }
 
 function validateForm(formId){
+  // this line is needed in order to not repeat validation X times on initHTML()
+  $("#"+formId).addClass('seen-form');
+  // the rest of the code
   var numfields = $("#"+formId).find(':input').length;
   var validation = $("#"+formId).validate({
     rules: {
@@ -46,13 +60,7 @@ function validateForm(formId){
       })
   }
   if(validForm){
-    if(formId == "contactUsForm"){
-      $('#modalLoader').removeClass('dnone');
-      ajaxSendContactUsMail();
-      $('#modalLoader').addClass('dnone');  
-    } else {
-      console.log('Unhandled petition for Form "'+formId+'" specify it in form validators');
-    }
+    treatmentForm(formId);
   }
 }
 

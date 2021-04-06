@@ -4,6 +4,11 @@
       position: relative;
       height: 50px;
     }
+    &-menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     &-languages {
       position: absolute;
       top: 0;
@@ -37,16 +42,57 @@
     right: 15px;
     top: 15px;
     position: absolute;
-    z-index: 100;
+    z-index: 50;
     width: max-content;
     color: $color-black;
+  }
+  &__menu {
+    position: absolute;
+    z-index: 50;
+    margin: 5px 0 0 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+    width: max-content;
+    cursor: pointer;
+    display: none;
+    &:hover {
+      background-color: $color-white-transparent;
+    }
+    &_hamburgerline {
+      margin: 5px 0;
+      width: 20px;
+      height: 0px;
+      background-color: $color-white;
+      border-radius: 3px;
+      padding: 2px;
+    }
   }
 }
 
 .breadcrumb {
-  padding-left: 12px;
+  padding-left: 8px;
+  color: $color-light-grey;
+  cursor: pointer;
   &:first-of-type {
     padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    margin-right: 10px;
+    content: "";
+    border: solid $color-white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  &.inactive {
+    font-family: primary;
+    cursor: auto;
+    color: $color-white;
   }
 }
 

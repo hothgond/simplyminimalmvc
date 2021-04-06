@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-black".
-        on line 42 of C:\xampp\htdocs\minimal-framework\assets\styles\header.scss
+        on line 47 of C:\xampp\htdocs\minimal-framework\assets\styles\header.scss
 
-37:     right: 15px;
-38:     top: 15px;
-39:     position: absolute;
-40:     z-index: 100;
-41:     width: max-content;
-42:     color: $color-black;
-43:   }
-44: }
-45: 
-46: .breadcrumb {
-47:   padding-left: 12px;
+42:     right: 15px;
+43:     top: 15px;
+44:     position: absolute;
+45:     z-index: 50;
+46:     width: max-content;
+47:     color: $color-black;
+48:   }
+49:   &__menu {
+50:     position: absolute;
+51:     z-index: 50;
+52:     margin: 5px 0 0 5px;
 
 Backtrace:
-C:\xampp\htdocs\minimal-framework\assets\styles\header.scss:42
+C:\xampp\htdocs\minimal-framework\assets\styles\header.scss:47
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -72,4 +72,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-black\".\A         on line 42 of C:\xampp\htdocs\minimal-framework\assets\styles\header.scss\A \A 37:     right: 15px;\A 38:     top: 15px;\A 39:     position: absolute;\A 40:     z-index: 100;\A 41:     width: max-content;\A 42:     color: $color-black;\A 43:   }\A 44: }\A 45: \A 46: .breadcrumb {\A 47:   padding-left: 12px;"; }
+  content: "Error: Undefined variable: \"$color-black\".\A         on line 47 of C:\xampp\htdocs\minimal-framework\assets\styles\header.scss\A \A 42:     right: 15px;\A 43:     top: 15px;\A 44:     position: absolute;\A 45:     z-index: 50;\A 46:     width: max-content;\A 47:     color: $color-black;\A 48:   }\A 49:   &__menu {\A 50:     position: absolute;\A 51:     z-index: 50;\A 52:     margin: 5px 0 0 5px;"; }

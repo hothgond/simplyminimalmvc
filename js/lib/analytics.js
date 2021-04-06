@@ -52,15 +52,16 @@ analytics.prototype = {
     notifyGa: function(screenId) {
         var windowGa = window.ga;
         if (! windowGa) {
-            console.log('Not sending "' + screenId + '" to Analytics, no windowGA. Maybe a the HOSTNAME is not ok?');
+            console.log('GA missing: Not sending "' + screenId + '" to Analytics. Is HOSTNAME ok?');
             return;
         }
+        //console.log('GA sent: "' + screenId + '" pageview');
         windowGa('send', 'pageview', screenId);
     },
     notifyGtag: function(screenId) {
         var windowGTAG = window.gtag;
         if (! windowGTAG) {
-            console.log('Not sending "' + screenId + '" to Analytics, no windowGTAG. Maybe a the HOSTNAME is not ok?');
+            console.log('GTAG missing: Not sending "' + screenId + '" to Analytics. Is HOSTNAME ok?');
             return;
         }
     
@@ -78,7 +79,7 @@ analytics.prototype = {
             };
         }
     
-        //console.log('Sending "' + screenId + '" pageview');
+        //console.log('GTAG sent: "' + screenId + '" pageview');
     
         try {
             windowGTAG('config', this.ua, props);

@@ -17,5 +17,11 @@
 /* large screens < 1326 */
 /* large screens  <1200 */
 /* To Small screens, laptops */
+@media (max-width: 940px) {
+  #generalBodyContentSectionTable {
+    display: none; }
+
+  .header__menu {
+    display: block; } }
 /* To iPads, Tablets */
 /* To MOBILE DEVICES*/

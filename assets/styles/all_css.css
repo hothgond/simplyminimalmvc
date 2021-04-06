@@ -72,6 +72,10 @@
 .header__container-bar {
   position: relative;
   height: 50px; }
+.header__container-menu {
+  position: absolute;
+  top: 0;
+  left: 0; }
 .header__container-languages {
   position: absolute;
   top: 0;
@@ -99,14 +103,49 @@
   right: 15px;
   top: 15px;
   position: absolute;
-  z-index: 100;
+  z-index: 50;
   width: max-content;
   color: #000000; }
+.header__menu {
+  position: absolute;
+  z-index: 50;
+  margin: 5px 0 0 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  width: max-content;
+  cursor: pointer;
+  display: none; }
+  .header__menu:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+  .header__menu_hamburgerline {
+    margin: 5px 0;
+    width: 20px;
+    height: 0px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 2px; }
 
 .breadcrumb {
-  padding-left: 12px; }
+  padding-left: 8px;
+  color: #cccccc;
+  cursor: pointer; }
   .breadcrumb:first-of-type {
     padding-left: 0; }
+    .breadcrumb:first-of-type::before {
+      display: none; }
+  .breadcrumb::before {
+    margin-right: 10px;
+    content: "";
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+  .breadcrumb.inactive {
+    font-family: primary;
+    cursor: auto;
+    color: #ffffff; }
 
 .btn {
   border: 2px solid #ffffff;
@@ -164,16 +203,26 @@ body.es {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */ }
+  z-index: 100;
+  cursor: pointer; }
+  .modal__close {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 2px solid #999999;
+    position: absolute;
+    right: calc(10% - 12px);
+    top: calc(10% - -8px);
+    padding: 7px;
+    max-height: 24px; }
 
 .overlay {
   width: auto;
   height: 70vh;
   margin: 10% 10% 0 10%;
   background-color: #ffffff; }
+
+.card {
+  padding: 15px; }
 
 .dnone {
   display: none !important; }
@@ -195,6 +244,9 @@ textarea.error {
   background-color: rgba(255, 0, 0, 0.5);
   border: 2px solid #ff0000; }
 
+.content-center {
+  text-align: center; }
+
 /* larger screens < 4096 */
 @media (max-width: 4096px) {
   .footer {
@@ -214,5 +266,11 @@ textarea.error {
 /* large screens < 1326 */
 /* large screens  <1200 */
 /* To Small screens, laptops */
+@media (max-width: 940px) {
+  #generalBodyContentSectionTable {
+    display: none; }
+
+  .header__menu {
+    display: block; } }
 /* To iPads, Tablets */
 /* To MOBILE DEVICES*/
