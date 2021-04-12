@@ -1,6 +1,4 @@
 
-localStorage.setItem("simplyMinimalOnThisSite", false);
-
 function initIncludeHTML(){
     var z, i, elmnt, file, xhttp;
     /*loop through a collection of all HTML elements:*/

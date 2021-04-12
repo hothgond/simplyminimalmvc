@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$color-white".
-        on line 17 of C:\xampp\htdocs\minimal-framework\assets\styles\footer.scss
+        on line 17 of C:\xampp\htdocs\minimal-framework\front\assets\styles\footer.scss
 
 12: 
 13:       & span {
@@ -98,4 +98,5 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-white\".\A         on line 17 of C:\xampp\htdocs\minimal-framework\assets\styles\footer.scss\A \A 12: \A 13:       & span {\A 14:         align-self: center;\A 15:         line-height: 17px;\A 16:         padding: 0 8px;\A 17:         border-right: 2px solid $color-white;\A 18: \A 19:         &:first-of-type {\A 20:           padding: 0 8px 0 0;\A 21:         }\A 22:         &:last-of-type {"; }
+  content: 'Error: Undefined variable: "$color-white".\A         on line 17 of C:\xampp\htdocs\minimal-framework\assets\styles\footer.scss\A \A 12: \A 13:       & span {\A 14:         align-self: center;\A 15:         line-height: 17px;\A 16:         padding: 0 8px;\A 17:         border-right: 2px solid $color-white;\A 18: \A 19:         &:first-of-type {\A 20:           padding: 0 8px 0 0;\A 21:         }\A 22:         &:last-of-type {';
+}

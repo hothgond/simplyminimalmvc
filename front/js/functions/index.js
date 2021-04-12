@@ -2,7 +2,7 @@ function includeHTML() {
   
   /* ------------------- DO NOT CHANGE THE FOLLOWING jQuery CODE: --------------- */
   initIncludeHTML();
-  if ( localStorage.getItem("simplyMinimalOnThisSite") == "false" ) {
+  if ( localStorage.getItem("simplyMinimalOnThisSite") == null ) {
     localStorage.setItem("simplyMinimalOnThisSite", true);
     // local storage set base
     initLocalStorage();
@@ -11,6 +11,10 @@ function includeHTML() {
   }
   // init forms validation
   validateFormsOnInit();
+  // language
+  setLanguage(localStorage.getItem("language"));
+  // misc
+  toggleCookies(localStorage.getItem("showCookies"));
 
   // Initialization of environment variables HERE
 
@@ -22,10 +26,6 @@ function includeHTML() {
 
 
 function setInitialValues() {
-  // language
-  setLanguage(localStorage.getItem("language"));
-  // misc
-  toggleCookies(localStorage.getItem("showCookies"));
   // initial Data
   initialData();
   

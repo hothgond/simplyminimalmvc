@@ -1,7 +1,7 @@
 // Here put all ajax calls to execute at the beggining of the site load
 function ajaxCalls() {
   $.ajax({
-    url: "controllers/main.php",
+    url: "back/controllers/main.php",
     type: "GET",
     data: "",
     success: function (data) {
@@ -27,9 +27,15 @@ function ajaxSendContactUsMail() {
     weight: $("#contactUsInputWeight").val(),
   }
   $.ajax({
-    url: "controllers/sendmail.php",
+    url: "back/controllers/sendmail.php",
     type: "POST",
     data: objectData,
+    beforeSend: function(){
+      toggleModal('modalLoader');
+    },
+    complete: function(){
+      toggleModal('modalLoader');
+    },
     success: function(result){ // on success
       if (result == 'success'){
         $('#container-email').hide();

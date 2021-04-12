@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$color-dark-blue".
-        on line 5 of C:\xampp\htdocs\minimal-framework\assets\styles\general_styles.scss
+        on line 5 of C:\xampp\htdocs\minimal-framework\front\assets\styles\general_styles.scss
 
 1: .dnone {
 2:   display: none !important;
@@ -60,4 +60,5 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-dark-blue\".\A         on line 5 of C:\xampp\htdocs\minimal-framework\assets\styles\general_styles.scss\A \A 1: .dnone {\A 2:   display: none !important;\A 3: }\A 4: .selectable {\A 5:   color: $color-dark-blue;\A 6:   font-weight: bold;\A 7:   cursor: pointer;\A 8:   &:hover {\A 9:     color: $color-light-blue-hover;\A 10:     font-weight: bolder;"; }
+  content: 'Error: Undefined variable: "$color-dark-blue".\A         on line 5 of C:\xampp\htdocs\minimal-framework\assets\styles\general_styles.scss\A \A 1: .dnone {\A 2:   display: none !important;\A 3: }\A 4: .selectable {\A 5:   color: $color-dark-blue;\A 6:   font-weight: bold;\A 7:   cursor: pointer;\A 8:   &:hover {\A 9:     color: $color-light-blue-hover;\A 10:     font-weight: bolder;';
+}

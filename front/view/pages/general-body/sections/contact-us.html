@@ -15,7 +15,6 @@
         <label for="contactUsWeight" key="contactUs-label-weight"
           >Weight:</label
         >
-        <span key="contactUs-spec-weight">(required if age over 50)</span>
         <input type="text" id="contactUsInputWeight" name="weight" required />
       </div>
       <div class="formfield__email">
@@ -37,7 +36,7 @@
       class="formfield__submit"
       type="submit"
       key="contactUs-send"
-      onclick="validateForm('contactUsForm')"
+      onclick="sendForm('contactUsForm')"
     >
       Send
     </div>

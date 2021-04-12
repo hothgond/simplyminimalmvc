@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$color-dark-blue".
-        on line 20 of C:\xampp\htdocs\minimal-framework\assets\styles\index.scss
+        on line 20 of C:\xampp\htdocs\minimal-framework\front\assets\styles\index.scss
 
 15:     padding: 18px 14px 14px;
 16:     width: auto;
@@ -84,4 +84,5 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-dark-blue\".\A         on line 20 of C:\xampp\htdocs\minimal-framework\assets\styles\index.scss\A \A 15:     padding: 18px 14px 14px;\A 16:     width: auto;\A 17:     position: relative;\A 18:     background: linear-gradient(\A 19:       120deg,\A 20:       $color-dark-blue 50%,\A 21:       $color-dark-red 50%\A 22:     );\A 23:     color: $color-white;\A 24:     text-align: center;\A 25:     font-family: primaryBold;"; }
+  content: 'Error: Undefined variable: "$color-dark-blue".\A         on line 20 of C:\xampp\htdocs\minimal-framework\assets\styles\index.scss\A \A 15:     padding: 18px 14px 14px;\A 16:     width: auto;\A 17:     position: relative;\A 18:     background: linear-gradient(\A 19:       120deg,\A 20:       $color-dark-blue 50%,\A 21:       $color-dark-red 50%\A 22:     );\A 23:     color: $color-white;\A 24:     text-align: center;\A 25:     font-family: primaryBold;';
+}

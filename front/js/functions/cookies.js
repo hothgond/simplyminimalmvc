@@ -4,10 +4,9 @@ function optionCookies(optionCookies) {
     localStorage.setItem("showCookies", false);
   } else {
     openFooterLink(7);
-  }
-}
+  }}
 function toggleCookies(showCookies) {
-  if (showCookies == 0) {
+  if (showCookies == "false") {
     $("#container-cookies").hide();
     $(".share").addClass("share-down");
   }

@@ -43,7 +43,6 @@
     "contactUs-label-age": "Age:",
     "contactUs-min-age": "(minimum 18)",
     "contactUs-label-weight": "Weight:",
-    "contactUs-spec-weight": "(required if age over 50)",
     "contactUs-label-email": "Email:",
     "contactUs-label-text": "Text:",
     "contactUs-send": "Send",

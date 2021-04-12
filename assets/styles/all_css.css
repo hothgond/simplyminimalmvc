@@ -107,16 +107,17 @@
   width: max-content;
   color: #000000; }
 .header__menu {
-  position: absolute;
+  position: fixed;
   z-index: 50;
   margin: 5px 0 0 5px;
   padding: 0 5px;
   border-radius: 5px;
   width: max-content;
   cursor: pointer;
-  display: none; }
+  display: none;
+  background-color: rgba(255, 0, 0, 0.5); }
   .header__menu:hover {
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: #ff0000; }
   .header__menu_hamburgerline {
     margin: 5px 0;
     width: 20px;

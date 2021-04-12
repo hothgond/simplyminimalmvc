@@ -47,7 +47,7 @@
     color: $color-black;
   }
   &__menu {
-    position: absolute;
+    position: fixed;
     z-index: 50;
     margin: 5px 0 0 5px;
     padding: 0 5px;
@@ -55,8 +55,9 @@
     width: max-content;
     cursor: pointer;
     display: none;
+    background-color: $color-red-transparent;
     &:hover {
-      background-color: $color-white-transparent;
+      background-color: $color-red;
     }
     &_hamburgerline {
       margin: 5px 0;

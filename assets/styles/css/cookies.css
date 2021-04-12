@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$color-light".
-        on line 3 of C:\xampp\htdocs\minimal-framework\assets\styles\cookies.scss
+        on line 3 of C:\xampp\htdocs\minimal-framework\front\assets\styles\cookies.scss
 
 1: .container-cookies {
 2:   padding: 33px 60px;
@@ -58,4 +58,5 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-light\".\A         on line 3 of C:\xampp\htdocs\minimal-framework\assets\styles\cookies.scss\A \A 1: .container-cookies {\A 2:   padding: 33px 60px;\A 3:   background-color: $color-light;\A 4:   width: calc(100% - 120px);\A 5:   min-height: 60px;\A 6:   position: fixed;\A 7:   bottom: 0;\A 8:   z-index: 10;"; }
+  content: 'Error: Undefined variable: "$color-light".\A         on line 3 of C:\xampp\htdocs\minimal-framework\assets\styles\cookies.scss\A \A 1: .container-cookies {\A 2:   padding: 33px 60px;\A 3:   background-color: $color-light;\A 4:   width: calc(100% - 120px);\A 5:   min-height: 60px;\A 6:   position: fixed;\A 7:   bottom: 0;\A 8:   z-index: 10;';
+}

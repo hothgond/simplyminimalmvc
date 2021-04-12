@@ -10,7 +10,7 @@ Error: Undefined variable: "$color-black".
 47:     color: $color-black;
 48:   }
 49:   &__menu {
-50:     position: absolute;
+50:     position: fixed;
 51:     z-index: 50;
 52:     margin: 5px 0 0 5px;
 
@@ -72,4 +72,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-black\".\A         on line 47 of C:\xampp\htdocs\minimal-framework\assets\styles\header.scss\A \A 42:     right: 15px;\A 43:     top: 15px;\A 44:     position: absolute;\A 45:     z-index: 50;\A 46:     width: max-content;\A 47:     color: $color-black;\A 48:   }\A 49:   &__menu {\A 50:     position: absolute;\A 51:     z-index: 50;\A 52:     margin: 5px 0 0 5px;"; }
+  content: "Error: Undefined variable: \"$color-black\".\A         on line 47 of C:\xampp\htdocs\minimal-framework\assets\styles\header.scss\A \A 42:     right: 15px;\A 43:     top: 15px;\A 44:     position: absolute;\A 45:     z-index: 50;\A 46:     width: max-content;\A 47:     color: $color-black;\A 48:   }\A 49:   &__menu {\A 50:     position: fixed;\A 51:     z-index: 50;\A 52:     margin: 5px 0 0 5px;"; }
