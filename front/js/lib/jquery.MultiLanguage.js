@@ -40,7 +40,7 @@ function getLanguage() {
             } else if (index == 'text'){
                 // NORMAL TEXTS
                 $.each(val, function (i, v) {
-                    $("[key="+i+"]").text(v);
+                    $("[key="+i+"]").html(v);
                 });
             }
         })

@@ -91,6 +91,16 @@
     "home-offer-others-pt4": "Front-end to Back-end easy built-in Asynchronous communication system. (AJAX)",
     "home-offer-others-pt5": "SimplyMinimalMVC is 100% free to use and 100% adds-free.",
 
+    "home-frontend-header": "Front-end views",
+    "home-frontend-structure": "File structure:",
+    "home-frontend-structure-description-pt1": "<strong>Structure</strong>: We use includeHTML() function to compile all views into one document, which allows to parse html in folders for better segmentation.",
+    "home-frontend-structure-description-pt2": "<strong>Translations</strong>: We use '<u>key</u>' parameter in html for language translations. Key parameter is our dictionary entry in our json translation files in <u>assets/locales</u> folder",
+    "home-frontend-structure-description-pt3": "<strong>Modals</strong>: Modal windows can be easily generated and activated. They are all inside <u>/front/view/pages/modals</u> folder, and are declated (and included in our html file) from <u>/front/view/container/modals.html</u> file. To show and hide modals, just call: <u>toggleModal('modalId')</u> where modalId is the modal ID which we want to interact with. So every modal MUST have an ID.",
+    "home-frontend-structure-description-pt4": "<strong>Sections</strong>: To change the currently displayed section, just use function <u>showBodySection('sectionId')</u>. Altought no changes in URL will be apreciated, there is a Google analytics tool that will be sensible to this changes (if set) and also breadcrumbs will be generated (if set).",
+    "home-frontend-structure-description-pt5": "<strong>Analytics</strong>: To activate Google Analytics substitution tool, you should go to <u>/front/js/lib/analytics.js</u> and interact with <u>googleAnalyticsSectionsObject</u> variable. (You should have a GA account first and add a the key in <u>googleAnalyticsKey</u> and also change the <u>hostname</u> variable)",
+    "home-frontend-structure-description-pt6": "<strong>Breadcrumbs</strong>: For a correct use of Breadcrumbs tool, the section we want to show must be in translates files with the key: 'section-'+sectionId.",
+    "home-frontend-structure-description-pt7": "<strong>Form Validation</strong>: Based in jQuery-Validate; just remember to add a 'name' parameter into every field input of the form for verification purpouses. Also remember to add them in validateFormsOnInit() and sendForm() functions, inside <u>/front/js/lib/validators.js</u>, to define its behaviour. There is five field 'names' that automatically validate: email, name, message, age and weight. You can declare other identifiers (names) for inputs with its own validators here. Note: You can see every validation types in changeValidationLang() function.",
+
     "section-loader-name": "Loader screen",
     "section-overlay1-name": "Overlay 1",
     "section-overlay2-name": "Overlay 2"

@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <body>
-    <div class="frontend__header" key="home-frontend-header">
+    <h1 class="frontend__header" key="home-frontend-header">
       Front-end views
-    </div>
+    </h1>
     <div class="frontend__content">
       <h2 class="frontend__content_h2" key="home-frontend-structure">
         File structure:
       </h2>
-      <div key="home-frontend-structure-description">
-        SimplyMinimalMVC uses includeHTML() function to compile all views file structure into one document. 
-      </div>
+      <ul class="intro__content_ul">
+        <li key="home-frontend-structure-description-pt1">
+          <strong>Structure</strong>: We use includeHTML() function to compile all views into one document, which allows to parse html in folders for better segmentation.
+        </li>
+        <li key="home-frontend-structure-description-pt2">
+          <strong>Translations</strong>: We use '<u>key</u>' parameter in html for language translations. Key parameter is our dictionary entry in our json translation files in <u>assets/locales</u> folder. Translations can include html inside, altought it is not recommended to add complex html in translations.
+        </li>
+        <li key="home-frontend-structure-description-pt3">
+          <strong>Modals</strong>: Modal windows can be easily generated and activated. They are all inside <u>/front/view/pages/modals</u> folder, and are declated (and included in our html file) from <u>/front/view/container/modals.html</u> file. To show and hide modals, just call: <u>toggleModal('modalId')</u> where modalId is the modal ID which we want to interact with. So every modal MUST have an ID.
+        </li>
+        <li key="home-frontend-structure-description-pt4">
+          <strong>Sections</strong>: To change the currently displayed section, just use function <u>showBodySection('sectionId')</u>. Altought no changes in URL will be apreciated, there is a Google analytics tool that will be sensible to this changes (if set) and also breadcrumbs will be generated (if set).
+        </li> 
+        <li style="list-style: none;">
+          <ul>
+            <li key="home-frontend-structure-description-pt5">
+              <strong>Analytics</strong>: To activate Google Analytics substitution tool, you should go to <u>/front/js/lib/analytics.js</u> and interact with <u>googleAnalyticsSectionsObject</u> variable. (You should have a GA account first and add a the key in <u>googleAnalyticsKey</u> and also change the <u>hostname</u> variable)
+            </li>
+            <li key="home-frontend-structure-description-pt6">
+              <strong>Breadcrumbs</strong>: For a correct use of Breadcrumbs tool, the section we want to show must be in translates files with the key: 'section-'+sectionId.
+            </li>
+          </ul>
+        </li> 
+        <li key="home-frontend-structure-description-pt7">
+          <strong>Form Validation</strong>: Based in jQuery-Validate; just remember to add a 'name' parameter into every field input of the form for verification purpouses. Also remember to add them in validateFormsOnInit() and sendForm() functions, inside <u>/front/js/lib/validators.js</u>, to define its behaviour. There is five field 'names' that automatically validate: email, name, message, age and weight. You can declare other identifiers (names) for inputs with its own validators here. Note: You can see every validation types in changeValidationLang() function.
+        </li>
+      </ul>
       <h3 class="frontend__content_h3" key="home-frontend-offer-others">
         Other minimal interesting things:
       </h3>

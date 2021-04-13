@@ -91,6 +91,16 @@
     "home-offer-others-pt4": "Sisteama de comunicación Front-end a Back-end asíncrono incorporado. (AJAX)",
     "home-offer-others-pt5": "SimplyMinimalMVC es 100% libre y 100% sin publicidad.",
 
+    "home-frontend-header": "Vistas de Front-End",
+    "home-frontend-structure": "Estructura de Ficheros:",
+    "home-frontend-structure-description-pt1": "<strong>Estructura</strong>: Usamos la función includeHTML() para compilar todos los archivos de vista en un documento. Esto permite dividir los HTML en carpetas para mejor segmentación de código.",
+    "home-frontend-structure-description-pt2": "<strong>Traducciones</strong>: Usamos el parámetro 'key' en html para las traducciones. Este parámetro debe corresponder con el índice nuestros archivos de traducción en json dentro de la carpeta assets/locales",
+    "home-frontend-structure-description-pt3": "<strong>Modales</strong>: Todas as ventanas modales pueden ser fácilmente generadas y activadas. Todas se encuentran en la carpeta /front/view/pages/modals, y se declaran (e incluyen en nuestro html) desde el archivo /front/view/container/modals.html. Para activarlas y desactivarlas basta con llamar a la función: toggleModal('modalId') donde modalId es el ID de la modal con que queremos interactuar. Entonces toda ventana modal DEBE tener un ID.",
+    "home-frontend-structure-description-pt4": "<strong>Secciones</strong>: Para cambiar la sección que se muestra en pantalla actualmente, sólo hay que usar showBodySection('sectionId'). Aunque no cambie la URL, Las herramientas de Google analytics serán sensibles a este cambio (si se han activado) y veremos aparecer una breadcrumb básica (si se ha activado).",
+    "home-frontend-structure-description-pt5": "<strong>Analytics</strong>: Para activar la herramienta de Google Analytics, debemos ir a /front/js/lib/analytics.js e interactuar con el array googleAnalyticsSectionsObject. (Ten en cuenta que debes tener cuenta en GA y añadir nuestra clave en googleAnalyticsKey y cambiar la variabke hostname)",
+    "home-frontend-structure-description-pt6": "<strong>Breadcrumbs</strong>: Para un correcto uso de la herramienta de Breadcrumbs, La sección que queremos mostrar debe estar en nuestros archivos de traducciones con la clave: 'section-'+sectionId .",
+    "home-frontend-structure-description-pt7": "<strong>Formularios y validación</strong>: La validación de formularios está basada en jQuery-Validate: Recuerda añadir 'name' a todos tus inputs y también cada ID de formulario en las funciones validateFormsOnInit() y sendForm(), en /front/js/lib/validators.js, que definen su comoortamiento. Hay cinco 'names' que se validan actualmente: email, name, message, age y weight. Puedes declarar nuevos tipos de input a validar (name) en este archivo. Nota: Puedes ver todos los tipos de validación en la función changeValidationLang() en ese archivo también.",
+
     "section-loader-name": "Pantalla de carga",
     "section-overlay1-name": "Overlay 1",
     "section-overlay2-name": "Overlay 2"
