@@ -33,7 +33,7 @@ Other minimal interesting things:
 Front-end
 
 - Structure: We use includeHTML() function to compile all views into one document, which allows to parse html in folders for better segmentation.
-  Translations: We use 'key' parameter in html for language translations. Key parameter is our dictionary entry in our json translation files in assets/locales folder
+- Translations: We use 'key' parameter in html for language translations. Key parameter is our dictionary entry in our json translation files in assets/locales folder
 - Modals: Modal windows can be easily generated and activated. They are all inside /front/view/pages/modals folder, and are declated (and included in our html file) from /front/view/container/modals.html file. To show and hide modals, just call: toggleModal('modalId') where modalId is the modal ID which we want to interact with. So every modal MUST have an ID.
 - Sections: To change the currently displayed section, just use function showBodySection('sectionId'). Altought no changes in URL will be apreciated, there is a Google analytics tool that will be sensible to this changes (if set) and also breadcrumbs will be generated (if set).
 - - Analytics: To activate Google Analytics substitution tool, you should go to /front/js/lib/analytics.js and interact with googleAnalyticsSectionsObject variable. (You should have a GA account first and add a the key in googleAnalyticsKey and also change the hostname variable)
