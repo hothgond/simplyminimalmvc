@@ -10,8 +10,9 @@ const hostname = 'simplyminimalmvc';
 // lines: "SectionId": ["Name of the section", "virtual url"]
 // "SectionId" must be the same ID of the section on HTML that needs to be tracked in analytics
 const googleAnalyticsSectionsObject = {
-    "generalBodyContentSectionHome": ["Home", "home"],
-    "generalBodyContentSectionContactUs": ["Contact Us", "contact"],
+    "home": ["Home", "home"],
+    "contactUs": ["Contact Us", "contact"],
+    "breadcrumbTest": ["Breadcrumb test", "breadcrumbTest"],
 };
 
 // Initial code

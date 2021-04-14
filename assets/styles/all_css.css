@@ -220,6 +220,7 @@ body.es {
   width: auto;
   height: 70vh;
   margin: 10% 10% 0 10%;
+  border-radius: 9px;
   background-color: #ffffff; }
 
 .card {
@@ -268,7 +269,7 @@ textarea.error {
 /* large screens  <1200 */
 /* To Small screens, laptops */
 @media (max-width: 940px) {
-  #generalBodyContentSectionTable {
+  #tableOfContents {
     display: none; }
 
   .header__menu {

@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$color-black-transparent".
-        on line 9 of C:\xampp\htdocs\minimal-framework\front\assets\styles\modals.scss
+        on line 9 of C:\xampp\htdocs\minimal-framework\assets\styles\modals.scss
 
 4:   height: 100%; /* Full height (cover the whole page) *\/
 5:   top: 0;
@@ -61,5 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: 'Error: Undefined variable: "$color-black-transparent".\A         on line 9 of C:\xampp\htdocs\minimal-framework\assets\styles\modals.scss\A \A 4:   height: 100%; /* Full height (cover the whole page) */\A 5:   top: 0;\A 6:   left: 0;\A 7:   right: 0;\A 8:   bottom: 0;\A 9:   background-color: $color-black-transparent; /* Black background with opacity */\A 10:   z-index: 100;\A 11:   cursor: pointer;\A 12:   &__close {\A 13:     background-color: $color-white;\A 14:     border-radius: 25px;';
-}
+  content: "Error: Undefined variable: \"$color-black-transparent\".\A         on line 9 of C:\xampp\htdocs\minimal-framework\assets\styles\modals.scss\A \A 4:   height: 100%; /* Full height (cover the whole page) */\A 5:   top: 0;\A 6:   left: 0;\A 7:   right: 0;\A 8:   bottom: 0;\A 9:   background-color: $color-black-transparent; /* Black background with opacity */\A 10:   z-index: 100;\A 11:   cursor: pointer;\A 12:   &__close {\A 13:     background-color: $color-white;\A 14:     border-radius: 25px;"; }

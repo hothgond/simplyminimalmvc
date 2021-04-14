@@ -14,8 +14,13 @@
   "text": {
     "header-supertitle": "SimplyMinimalMVC",
     "header-title": "El MVC que podrías necesitar",
-    "section-generalBodyContentSectionHome": "Home",
-    "section-generalBodyContentSectionContactUs": "Contáctanos",
+
+    "section-home": "Home",
+    "section-contactUs": "Contáctanos",
+    "section-breadcrumbTest": "Test migas de pan",
+    "section-loader-name": "Pantalla de carga",
+    "section-overlay1-name": "Overlay 1",
+    "section-overlay2-name": "Overlay 2",
 
     "footer-title": "Título del Footer",
     "footer-explanation": "Contenido del Footer",
@@ -99,10 +104,6 @@
     "home-frontend-structure-description-pt4": "<strong>Secciones</strong>: Para cambiar la sección que se muestra en pantalla actualmente, sólo hay que usar showBodySection('sectionId'). Aunque no cambie la URL, Las herramientas de Google analytics serán sensibles a este cambio (si se han activado) y veremos aparecer una breadcrumb básica (si se ha activado).",
     "home-frontend-structure-description-pt5": "<strong>Analytics</strong>: Para activar la herramienta de Google Analytics, debemos ir a /front/js/lib/analytics.js e interactuar con el array googleAnalyticsSectionsObject. (Ten en cuenta que debes tener cuenta en GA y añadir nuestra clave en googleAnalyticsKey y cambiar la variabke hostname)",
     "home-frontend-structure-description-pt6": "<strong>Breadcrumbs</strong>: Para un correcto uso de la herramienta de Breadcrumbs, La sección que queremos mostrar debe estar en nuestros archivos de traducciones con la clave: 'section-'+sectionId .",
-    "home-frontend-structure-description-pt7": "<strong>Formularios y validación</strong>: La validación de formularios está basada en jQuery-Validate: Recuerda añadir 'name' a todos tus inputs y también cada ID de formulario en las funciones validateFormsOnInit() y sendForm(), en /front/js/lib/validators.js, que definen su comoortamiento. Hay cinco 'names' que se validan actualmente: email, name, message, age y weight. Puedes declarar nuevos tipos de input a validar (name) en este archivo. Nota: Puedes ver todos los tipos de validación en la función changeValidationLang() en ese archivo también.",
-
-    "section-loader-name": "Pantalla de carga",
-    "section-overlay1-name": "Overlay 1",
-    "section-overlay2-name": "Overlay 2"
+    "home-frontend-structure-description-pt7": "<strong>Formularios y validación</strong>: La validación de formularios está basada en jQuery-Validate: Recuerda añadir 'name' a todos tus inputs y también cada ID de formulario en las funciones validateFormsOnInit() y sendForm(), en /front/js/lib/validators.js, que definen su comoortamiento. Hay cinco 'names' que se validan actualmente: email, name, message, age y weight. Puedes declarar nuevos tipos de input a validar (name) en este archivo. Nota: Puedes ver todos los tipos de validación en la función changeValidationLang() en ese archivo también."
   }
 }
