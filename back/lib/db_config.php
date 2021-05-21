@@ -1,14 +1,14 @@
 <?php
 spl_autoload_register(function ($classname) {
-    include $classname . '.php';
+    require_once $classname . '.php';
 });
 
 
 class db_config {
 	
 	// EDIT HERE
-    private $db_host = 'localhost'; 	// localhost, domain or IP
-    private $db_user = 'user_name'; 	// user name
+    private $db_host = '127.0.0.1'; 	// domain or IP. For Localhost use 127.0.0.1
+    private $db_user = 'root'; 	        // user name
     private $db_pass = '';				// passsword to access DB
     private $db_name = 'db_name'; 		// database container
     public $db;

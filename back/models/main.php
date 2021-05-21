@@ -1,9 +1,6 @@
 <?php
-spl_autoload_register(function ($classname) {
-    include $classname . '.php';
-});
 
-include '../lib/db_config.php';
+require_once '../lib/db_config.php';
 
 class main {
     public $connection;

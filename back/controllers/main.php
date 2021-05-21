@@ -1,5 +1,5 @@
 <?php
-include '../models/model_main.php';
+require_once '../models/model_main.php';
 
 $main = new main();
 

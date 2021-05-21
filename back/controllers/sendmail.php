@@ -1,6 +1,6 @@
 <?php
 
-include '../lib/sanitize_inputs.php';
+require_once '../lib/sanitize_inputs.php';
 $sanitizeField = new sanitize_inputs();
 
 header("Content-Type: text/json; charset=utf8");

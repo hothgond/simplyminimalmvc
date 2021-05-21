@@ -1,7 +1,7 @@
 function includeHTML() {
   
   /* ------------------- DO NOT CHANGE THE FOLLOWING jQuery CODE: --------------- */
-  initIncludeHTML();
+  var finishedInclude = initIncludeHTML();
   if ( localStorage.getItem("simplyMinimalOnThisSite") == null ) {
     localStorage.setItem("simplyMinimalOnThisSite", true);
     // local storage set base
@@ -9,8 +9,7 @@ function includeHTML() {
     // initial values
     setInitialValues();
   }
-  // init forms validation
-  validateFormsOnInit();
+  
   // language
   setLanguage(localStorage.getItem("language"));
   // misc
@@ -18,8 +17,17 @@ function includeHTML() {
 
   // Initialization of environment variables HERE
 
-  // others to execute at the beginning go here
-  //setOthers(0);
+  // execute at the end of includes, when it returns UNDEFINED
+  // Actions to do when page loaded, as documentLoaded
+  if(finishedInclude == undefined){
+    // init forms validation
+    validateFormsOnInit();
+    //example
+    $( "#id" ).click(function() {
+      $("input").val('');
+    });
+
+  }
 }
 
 // Initialization of environment variables HERE
