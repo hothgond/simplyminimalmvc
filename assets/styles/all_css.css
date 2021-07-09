@@ -170,7 +170,7 @@ body.es {
   direction: ltr;
   text-align: left; }
 
-.container-header {
+.area-header {
   padding: 18px 14px 14px;
   width: auto;
   position: relative;
@@ -179,10 +179,10 @@ body.es {
   text-align: center;
   font-family: primaryBold;
   text-transform: uppercase; }
-.container-body {
+.area-body {
   padding: 18px 14px 14px;
   min-height: calc(100vh - 302px); }
-.container-footer {
+.area-footer {
   width: auto;
   padding: 18px 14px 14px;
   background-color: #0d2243;
