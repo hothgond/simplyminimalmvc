@@ -22,3 +22,27 @@ textarea.error {
 .content-center {
   text-align: center;
 }
+
+.btn {
+  border: 2px solid $color-white;
+  border-radius: 8px;
+  background-color: $color-white-transparent;
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-grey;
+  }
+  &.selected {
+    background-color: $color-white;
+  }
+
+  &__agree {
+    display: inline-block;
+    border-color: $color-light-blue-hover;
+  }
+  &__more {
+    display: inline-block;
+
+  }
+}

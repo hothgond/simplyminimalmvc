@@ -1,4 +1,4 @@
-.container-cookies {
+.area-cookies {
   padding: 33px 60px;
   background-color: $color-light;
   width: calc(100% - 120px);
@@ -9,4 +9,32 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.general__cookies {
+  width: 100%;
+}
+
+.cookies {
+  &__policy {
+    &_container {
+      width: 100%;
+    }
+    &_title {
+      font-size: 22px;
+    }
+    &_descripton {
+
+    }
+  }
+  &__buttons {
+
+    & img {
+      vertical-align: middle;
+      margin-top: -4px;
+      border-radius: 50%;
+      height: 20px;
+      background-color: $color-dark-green;
+    }
+  }
 }
