@@ -14,16 +14,17 @@
     border-radius: 25px;
     border: 2px solid $color-grey;
     position: absolute;
-    right: calc(10% - 12px);
-    top: calc(10% - -8px);
+    right: calc(15% - 12px);
+    top: 140px;
     padding: 7px;
     max-height: 24px;
   }
 }
 .overlay {
   width: auto;
-  height: 70vh;
-  margin: 10% 10% 0 10%;
+  width: 70%;
+  height: 750px;
+  margin: 150px 15%;
   border-radius: 9px;
   background-color: $color-white;
 }

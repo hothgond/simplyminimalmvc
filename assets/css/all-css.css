@@ -27,7 +27,7 @@
   .generalbody__content_section-general {
     width: calc(100% - 220px); }
 
-.container-cookies {
+.area-cookies {
   padding: 33px 60px;
   background-color: #eeeeee;
   width: calc(100% - 120px);
@@ -38,6 +38,20 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+
+.general__cookies {
+  width: 100%; }
+
+.cookies__policy_container {
+  width: 100%; }
+.cookies__policy_title {
+  font-size: 22px; }
+.cookies__buttons img {
+  vertical-align: middle;
+  margin-top: -4px;
+  border-radius: 50%;
+  height: 20px;
+  background-color: green; }
 
 .sitelogo {
   width: 13px; }
@@ -148,17 +162,6 @@
     cursor: auto;
     color: #ffffff; }
 
-.btn {
-  border: 2px solid #ffffff;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 5px;
-  cursor: pointer; }
-  .btn:hover {
-    background-color: #cccccc; }
-  .btn.selected {
-    background-color: #ffffff; }
-
 body {
   margin: 0;
   padding: 0;
@@ -170,7 +173,7 @@ body.es {
   direction: ltr;
   text-align: left; }
 
-.container-header {
+.area-header {
   padding: 18px 14px 14px;
   width: auto;
   position: relative;
@@ -179,10 +182,10 @@ body.es {
   text-align: center;
   font-family: primaryBold;
   text-transform: uppercase; }
-.container-body {
+.area-body {
   padding: 18px 14px 14px;
   min-height: calc(100vh - 302px); }
-.container-footer {
+.area-footer {
   width: auto;
   padding: 18px 14px 14px;
   background-color: #0d2243;
@@ -211,15 +214,16 @@ body.es {
     border-radius: 25px;
     border: 2px solid #999999;
     position: absolute;
-    right: calc(10% - 12px);
-    top: calc(10% - -8px);
+    right: calc(15% - 12px);
+    top: 140px;
     padding: 7px;
     max-height: 24px; }
 
 .overlay {
   width: auto;
-  height: 70vh;
-  margin: 10% 10% 0 10%;
+  width: 70%;
+  height: 750px;
+  margin: 150px 15%;
   border-radius: 9px;
   background-color: #ffffff; }
 
@@ -249,6 +253,22 @@ textarea.error {
 .content-center {
   text-align: center; }
 
+.btn {
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #cccccc; }
+  .btn.selected {
+    background-color: #ffffff; }
+  .btn__agree {
+    display: inline-block;
+    border-color: #537cbe; }
+  .btn__more {
+    display: inline-block; }
+
 /* larger screens < 4096 */
 @media (max-width: 4096px) {
   .footer {
@@ -276,3 +296,5 @@ textarea.error {
     display: block; } }
 /* To iPads, Tablets */
 /* To MOBILE DEVICES*/
+
+/*# sourceMappingURL=all-css.css.map */

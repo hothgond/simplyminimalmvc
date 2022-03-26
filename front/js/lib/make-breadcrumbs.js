@@ -7,11 +7,11 @@
     Just add breadcrumbs in this bariable as you need it
 */
 var breadcrumbs = {
-    contactUs: ['section-contactUs',[]],
+    pageContainerContactUs: ['section-contactUs',[]],
     breadcrumbTest: [
         'section-breadcrumbTest',
         [ // Parents array: ['section-key', 'sectionId']
-            ['section-contactUs','contactUs']
+            ['section-contactUs','pageContainerContactUs']
         ]
     ],
 }

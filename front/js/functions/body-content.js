@@ -6,7 +6,7 @@ function showBodySection(sectionId) {
     // ALTER BASIC BREADCRUMBS
     makeBreadcrumbs(sectionId);
     // SHOW SECTION
-    $(".generalbody__content_section").addClass("dnone"); //all sections go hidden
+    $(".content__page").addClass("dnone"); //all sections go hidden
     $("#"+sectionId).removeClass("dnone"); //show selected section
     // ANALYTICS CHANGE
     if (typeof googleAnalytics.map[sectionId] !== 'undefined') {
@@ -14,11 +14,13 @@ function showBodySection(sectionId) {
     }
 }
 
-// Anchor needs tha ID of the Anchor and parentSectionId to show it if it is hidden!
-function scrollToAnchor(sectionId, parentSectionId){
+// needs the ID of the Anchor
+function scrollToAnchor(sectionId){
+    var tag = $("#"+ sectionId);
     // Show parent section if needed
-    showBodySection(parentSectionId);
+    if(tag.parent().hasClass('dnone')){
+        showBodySection(tag.parent());
+    }
     // SCROLL TO
-    var tag = $("#"+ sectionId +"");
     $('html,body').animate({scrollTop: tag.offset().top},'slow');
 }
