@@ -1,12 +1,14 @@
-function showBodySection(sectionId) {
+function showBodySection(sectionId, addToHistory) {
     // CLOSE NAVIGATION MODAL IF NEEDED
     if (!$("#navigationModal").hasClass('dnone')) {
         toggleModal('navigationModal');
     }
     // ALTER BASIC BREADCRUMBS
     makeBreadcrumbs(sectionId);
-    // ALTER URL HISTORY
-    makeSection(sectionId)
+    // ADD URL TO HISTORY
+    if (addToHistory) {
+        addUrlToHistory(sectionId);
+    }
     // SHOW SECTION
     $(".content__page").addClass("dnone"); //all sections go hidden
     $("#"+sectionId).removeClass("dnone"); //show selected section
@@ -21,7 +23,7 @@ function scrollToAnchor(sectionId){
     var tag = $("#"+ sectionId);
     // Show parent section if needed
     if(tag.parent().hasClass('dnone')){
-        showBodySection(tag.parent());
+        showBodySection(tag.parent(), true);
     }
     // SCROLL TO
     $('html,body').animate({scrollTop: tag.offset().top},'slow');

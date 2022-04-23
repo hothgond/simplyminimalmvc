@@ -8,21 +8,12 @@ function makeBreadcrumbs(sectionId){
         $.each(breadcrumbInUse[1], function(i, b) {
             breadcrumbTranslation = getTranslationByKey(b[0]);
             $( ".header__container-breadcrumbs" ).append(
-                '<div class="breadcrumb active" onclick="showBodySection(\''+b[1]+'\')" key="'+b[0]+'">'+breadcrumbTranslation+'</div>'
+                '<div class="breadcrumb active" onclick="showBodySection(\''+b[1]+'\', true)" key="'+b[0]+'">'+breadcrumbTranslation+'</div>'
             );
         });
         breadcrumbTranslation = getTranslationByKey(breadcrumbInUse[0]);
         $( ".header__container-breadcrumbs" ).append(
             '<div class="breadcrumb inactive" key="section-'+sectionId+'">'+breadcrumbTranslation+'</div>'
         );
-    }
-}
-
-function makeSection(sectionId){
-    if(sections.hasOwnProperty(sectionId)){
-        var sectionInUse = sections[sectionId];
-        var sectionTranslation = '';
-        sectionTranslation = getTranslationByKey(sectionId);
-        history.pushState({pageID: sectionId}, sectionTranslation, sectionInUse[0]);
     }
 }

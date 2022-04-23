@@ -42,6 +42,7 @@ function setInitialValues() {
   
   // Other functions to be executed go here
   // changeBodyContents(Number(getLocalStorage("users")));
+  addUrlToHistory(Object.keys(sections)[0]);
   
 }
 

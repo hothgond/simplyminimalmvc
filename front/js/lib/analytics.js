@@ -1,20 +1,3 @@
-// CONSTANTS
-// googleAnalyticsKey should be something like 'UA-XXXXX-Y'
-const googleAnalyticsKey = '';
-
-// hostname should be the same as your location.hostname
-// console.log(location.hostname); // uncomment to know the location.hostname
-const hostname = 'simplyminimalmvc';
-
-// googleAnalyticsSectionsObject has all sections of your site in order to allow navigation information
-// lines: "SectionId": ["Name of the section", "virtual url"]
-// "SectionId" must be the same ID of the section on HTML that needs to be tracked in analytics
-const googleAnalyticsSectionsObject = {
-    "home": ["Home", "home"],
-    "contactUs": ["Contact Us", "contact"],
-    "breadcrumbTest": ["Breadcrumb test", "breadcrumbTest"],
-};
-
 // Initial code
 if (location.hostname === hostname) {
     window.dataLayer = window.dataLayer || [];
