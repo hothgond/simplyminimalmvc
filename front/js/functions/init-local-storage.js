@@ -1,4 +1,10 @@
-function storageSet(item, val){
+function getLocalStorage(item){
+  if (localStorage.getItem(item)) {
+    return localStorage.getItem(item);
+  }
+}
+
+function setLocalStorage(item, val){
   if (!localStorage.getItem(item)) {
     localStorage.setItem(item, val);
   }
@@ -17,6 +23,6 @@ function initLocalStorage() {
     setOthers: 0
   }
   $.each(localStorageItems, function (item, val) {
-    storageSet(item, val);
+    setLocalStorage(item, val);
   });
 }

@@ -1,6 +1,20 @@
 <?php
 // THIS IS A BASIC DB API, YOU SHOULD NOT CHANGE ANYTHING HERE
-class db {
+// Examples on how to use in db_config.php
+interface iDatabase {
+    public function __construct($dbhost = 'localhost', $dbuser = 'root', $dbpass = '', $dbname = '', $charset = 'utf8');
+    public function query($query);
+    public function fetchAll($callback = null);
+    public function fetchArray();
+	public function close();
+    public function numRows();
+	public function affectedRows();
+	public function lastInsertID();
+	public function error($error);
+	private function _gettype($var);
+}
+
+class db implements iDatabase {
     protected $connection;
 	protected $query;
     protected $show_errors = TRUE;

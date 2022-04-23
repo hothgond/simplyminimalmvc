@@ -3,33 +3,42 @@ spl_autoload_register(function ($classname) {
     require_once $classname . '.php';
 });
 
+interface iSanitize {
+    public function makeIntNumber($number);
+    public function makefloatNumber($number);
+    public function makeDate($date);
+    public function makePassword($pass);
+    public function makeText($text);
+    public function makeEmail($email);
+}
 
-class sanitize_inputs {
+
+class sanitize_inputs implements iSanitize {
 	
-    public function makeIntNumber($number){
+    public function makeIntNumber($number) {
         $number = intval($number);
         return $number;
     }
     
-    public function makefloatNumber($number){
+    public function makefloatNumber($number) {
         $number = floatval($number);
         return $number;
     }
 
-    public function makeDate($date){
+    public function makeDate($date) {
         // $date must be "mm/dd/yyyy";
         $date = explode('/',$date);
         return date("M-d-Y", mktime(0, 0, 0, $date[0], $date[1], $date[2]));
     }
 
-	public function makePassword($pass){
+	public function makePassword($pass) {
         $pass = trim($pass); //remove empty spaces
         $pass = strip_tags($pass); //remove html tags
         $pass = htmlentities($pass, ENT_QUOTES,'UTF-8'); //for major security transform some other chars into html corrispective...
         return $pass;
     }
     
-    public function makeText($text){
+    public function makeText($text) {
         $text = trim($text); //remove empty spaces
         $text = strip_tags($text); //remove html tags
         $text = filter_var($text, FILTER_SANITIZE_MAGIC_QUOTES); //addslashes();
@@ -39,7 +48,7 @@ class sanitize_inputs {
         return $text;
     }
     
-    public function makeEmail($email){
+    public function makeEmail($email) {
         $email = trim($email); //remove empty spaces
         $email = strip_tags($email); //remove html tags
         $email = filter_var($email, FILTER_SANITIZE_EMAIL); //e-mail filter;

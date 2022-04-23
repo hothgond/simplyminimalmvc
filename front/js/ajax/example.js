@@ -7,8 +7,8 @@ function ajaxCalls() {
     success: function (data) {
       //called when successful
       localStorage["data"] = data;
-      //showUsers(localStorage.getItem("showUsers"));
-      //setOthers(Number(localStorage.getItem("setOthers")));
+      //showUsers(getLocalStorage("showUsers"));
+      //setOthers(Number(getLocalStorage("setOthers")));
     },
     error: function (e) {
       //called when there is an error

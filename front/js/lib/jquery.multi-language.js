@@ -1,5 +1,5 @@
 // Language JSON File Location
-var language = localStorage.getItem('language');
+var language = getLocalStorage('language');
 
 // Set Selected Language
 function setLanguage(lang) {
@@ -7,7 +7,7 @@ function setLanguage(lang) {
     $(".header__languages .btn").removeClass('selected');
     $(".header__languages .btn[rel="+lang+"]").addClass('selected');
     //$("label.error").addClass('dnone'); // for errors in form translates!
-    language = localStorage.getItem('language');
+    language = getLocalStorage('language');
     // Run Multi Language Plugin
     getLanguage();
 }
@@ -71,7 +71,7 @@ function changeValidationLang(){
   }
 
 function getTranslationByKey(key){
-    var languageActiveKeys = JSON.parse(localStorage.getItem('language_active_keys'));
+    var languageActiveKeys = JSON.parse(getLocalStorage('language_active_keys'));
     return languageActiveKeys['text'][key];
 }
 

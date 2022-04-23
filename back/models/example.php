@@ -12,10 +12,12 @@ class example {
     public function getExampleData(){
         $this->connection = new db_config();
         $con = $this->connection->connect();
+        
         $exampleData = $con->query(
             "SELECT * 
             FROM example
             Limit 1")->fetchArray();
+
         return $exampleData;
     }
 }

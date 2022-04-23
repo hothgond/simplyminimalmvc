@@ -8,6 +8,7 @@ class main {
     public function disconnect(){
         $this->connection->disconnect();
     }
+
     // Example functions
     public function getAllUsers(){
         $this->connection = new db_config();
@@ -19,6 +20,7 @@ class main {
             ORDER BY id ASC")->fetchAll();
         return $users;
     }
+
     public function getUsersWithLimit($limit){
         $connection = new db_config();
         $con = $connection->connect();

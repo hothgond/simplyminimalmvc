@@ -3,8 +3,12 @@ spl_autoload_register(function ($classname) {
     require_once $classname . '.php';
 });
 
+interface iDbConfig {
+    public function connect();
+    public function disconnect();
+}
 
-class db_config {
+class db_config implements iDbConfig {
 	
 	// EDIT HERE
     private $db_host = '127.0.0.1'; 	// domain or IP. For Localhost use 127.0.0.1
@@ -14,10 +18,10 @@ class db_config {
     public $db;
 
 	// DO NOT EDIT BELOW
-    public function connect(){
+    public function connect() {
         return $this->db = new db($this->db_host, $this->db_user, $this->db_pass, $this->db_name);
     }
-    public function disconnect(){
+    public function disconnect() {
         $this->db->close();
     }
 }

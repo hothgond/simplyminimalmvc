@@ -5,6 +5,8 @@ function showBodySection(sectionId) {
     }
     // ALTER BASIC BREADCRUMBS
     makeBreadcrumbs(sectionId);
+    // ALTER URL HISTORY
+    makeSection(sectionId)
     // SHOW SECTION
     $(".content__page").addClass("dnone"); //all sections go hidden
     $("#"+sectionId).removeClass("dnone"); //show selected section
