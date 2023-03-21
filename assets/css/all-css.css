@@ -27,6 +27,11 @@
   .generalbody__content_section-general {
     width: calc(100% - 220px); }
 
+.img__hello {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
 .area-cookies {
   padding: 33px 60px;
   background-color: #eeeeee;
@@ -183,6 +188,7 @@ body.es {
   font-family: primaryBold;
   text-transform: uppercase; }
 .area-body {
+  position: relative;
   padding: 18px 14px 14px;
   min-height: calc(100vh - 302px); }
 .area-footer {
@@ -215,15 +221,15 @@ body.es {
     border: 2px solid #999999;
     position: absolute;
     right: calc(15% - 12px);
-    top: 140px;
+    top: 14vh;
     padding: 7px;
     max-height: 24px; }
 
 .overlay {
   width: auto;
   width: 70%;
-  height: 750px;
-  margin: 150px 15%;
+  height: 65vh;
+  margin: 15vh 15%;
   border-radius: 9px;
   background-color: #ffffff; }
 
@@ -269,32 +275,32 @@ textarea.error {
   .btn__more {
     display: inline-block; }
 
-/* larger screens < 4096 */
-@media (max-width: 4096px) {
-  .footer {
-    background-size: 2000px 1000px; } }
-/* larger screens < 2560 */
-@media (max-width: 2560px) {
-  .footer {
-    background-size: 1500px 850px; } }
-/* larger screens < 1920 */
-@media (max-width: 1920px) {
-  .footer {
-    background-size: 1300px 750px; } }
-/* larger screens < 1920 */
-@media (max-width: 1680px) {
-  .footer {
-    background-size: 1100px auto; } }
-/* large screens < 1326 */
-/* large screens  <1200 */
-/* To Small screens, laptops */
-@media (max-width: 940px) {
+/* To MOBILE DEVICES*/
+/* To iPads, Tablets */
+@media only screen and (max-width: 940px) {
   #tableOfContents {
     display: none; }
 
   .header__menu {
     display: block; } }
-/* To iPads, Tablets */
-/* To MOBILE DEVICES*/
+/* To Small screens, laptops */
+/* large screens  <1200 */
+/* large screens < 1326 */
+/* larger screens < 1920 */
+@media only screen and (min-width: 1680px) {
+  .footer {
+    background-size: 1100px auto; } }
+/* larger screens < 1920 */
+@media only screen and (min-width: 1920px) {
+  .footer {
+    background-size: 1300px 750px; } }
+/* larger screens < 2560 */
+@media only screen and (min-width: 2560px) {
+  .footer {
+    background-size: 1500px 850px; } }
+/* larger screens < 4096 */
+@media only screen and (min-width: 4096px) {
+  .footer {
+    background-size: 2000px 1000px; } }
 
 /*# sourceMappingURL=all-css.css.map */
