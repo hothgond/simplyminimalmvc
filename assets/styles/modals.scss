@@ -15,7 +15,7 @@
     border: 2px solid $color-grey;
     position: absolute;
     right: calc(15% - 12px);
-    top: 140px;
+    top: 14vh;
     padding: 7px;
     max-height: 24px;
   }
@@ -23,8 +23,8 @@
 .overlay {
   width: auto;
   width: 70%;
-  height: 750px;
-  margin: 150px 15%;
+  height: 65vh;
+  margin: 15vh 15%;
   border-radius: 9px;
   background-color: $color-white;
 }

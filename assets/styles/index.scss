@@ -26,6 +26,7 @@ body.es {
     text-transform: uppercase;
   }
   &-body {
+    position: relative;
     padding: 18px 14px 14px;
     min-height: calc(100vh - 302px);
   }

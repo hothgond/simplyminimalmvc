@@ -1,6 +1,8 @@
 {
   "head": "SimplyMinimalMVC",
   "img_alt": {
+    "img-intro-hello": "Hola img",
+
     "footer-alt-img-site": "Ver nuestro site",
     "footer-alt-img-linkedin": "Ver nuestro LinkedIn",
     "footer-alt-img-medium": "Ver nuestro Medium",
@@ -9,6 +11,9 @@
     "footer-alt-img-logo": "logo",
 
     "loader-alt-loader": "Cargando"
+  },
+  "img_src": {
+    "img-intro-hello": "assets/img/jpg/es/hello.jpg"
   },
   "a_title": {},
   "text": {

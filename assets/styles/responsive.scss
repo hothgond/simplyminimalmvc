@@ -1,43 +1,21 @@
-/* larger screens < 4096 */
-@media (max-width: 4096px) {
-  .footer {
-    background-size: 2000px 1000px;
-  }
+/* To MOBILE DEVICES*/
+@media only screen and (min-width: 480px) {
 }
 
-/* larger screens < 2560 */
-@media (max-width: 2560px) {
-  .footer {
-    background-size: 1500px 850px;
-  }
+@media only screen and (min-width: 552px) {
 }
 
-/* larger screens < 1920 */
-@media (max-width: 1920px) {
-  .footer {
-    background-size: 1300px 750px;
-  }
-}
-/* larger screens < 1920 */
-@media (max-width: 1680px) {
-  .footer {
-    background-size: 1100px auto;
-  }
+@media only screen and (min-width: 624px) {
 }
 
-/* large screens < 1326 */
-@media (max-width: 1326px) {
+/* To iPads, Tablets */
+@media only screen and (min-width: 768px) {
 }
 
-/* large screens  <1200 */
-@media (max-width: 1200px) {
+@media only screen and (min-width: 818px) {
 }
 
-/* To Small screens, laptops */
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 940px) {
+@media only screen and (max-width: 940px) {
   #tableOfContents {
     display: none;
   }
@@ -46,18 +24,42 @@
   }
 }
 
-@media (max-width: 818px) {
-}
-/* To iPads, Tablets */
-@media (max-width: 768px) {
+/* To Small screens, laptops */
+@media only screen and (min-width: 1024px) {
 }
 
-@media (max-width: 624px) {
+/* large screens  <1200 */
+@media only screen and (min-width: 1200px) {
 }
 
-@media (max-width: 552px) {
+/* large screens < 1326 */
+@media only screen and (min-width: 1326px) {
 }
 
-/* To MOBILE DEVICES*/
-@media (max-width: 480px) {
+/* larger screens < 1920 */
+@media only screen and (min-width: 1680px) {
+  .footer {
+    background-size: 1100px auto;
+  }
+}
+
+/* larger screens < 1920 */
+@media only screen and (min-width: 1920px) {
+  .footer {
+    background-size: 1300px 750px;
+  }
+}
+
+/* larger screens < 2560 */
+@media only screen and (min-width: 2560px) {
+  .footer {
+    background-size: 1500px 850px;
+  }
+}
+
+/* larger screens < 4096 */
+@media only screen and (min-width: 4096px) {
+  .footer {
+    background-size: 2000px 1000px;
+  }
 }

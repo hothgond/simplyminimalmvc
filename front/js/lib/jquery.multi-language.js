@@ -27,6 +27,11 @@ function getLanguage() {
             // head is the only RESTRICTED key!!!
             if (index == 'head'){
                 $(document).attr("title", val);
+            } else if (index == 'img_src'){
+                // IMAGES
+                $.each(val, function (i, v) {
+                    $("img[key="+i+"]").prop('src', v);
+                });
             } else if (index == 'img_alt'){
                 // ALTS of IMAGES
                 $.each(val, function (i, v) {
